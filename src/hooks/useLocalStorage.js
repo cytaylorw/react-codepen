@@ -11,11 +11,7 @@ export default function useLocalStorage(key, initialValue) {
         if(jsonValue != null) return JSON.parse(jsonValue)
 
         return typeof initialValue === 'function' ? initialValue() : initialValue
-        // if(typeof initialValue === 'function'){
 
-        // }else{
-
-        // }
     })
 
     useEffect(() => {
